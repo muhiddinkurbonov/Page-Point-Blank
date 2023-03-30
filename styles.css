@@ -10,3 +10,34 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+footer {
+    border: 1px solid black ;
+    color: #606060;    
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    bottom: 0;
+
+  }
+
+nav {
+    margin: 0;
+    padding: 0 auto;
+    padding-top: 20px;    
+    text-align: center;
+  }
+
+nav li {       
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+  }
+
+.container {
+    max-width: 940px;    
+    text-align: center;
+  }
