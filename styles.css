@@ -131,3 +131,37 @@ a {
   }
 }
 /********************** MENU END *********************/
+
+/********************** FOOTER *********************/
+
+footer {
+  background-color: #b4dfe5;
+  position: fixed;
+  width: 100%;
+  margin-top: 10px;
+  bottom: 0;
+}
+
+.footer-nav {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-nav li {
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-block;
+  width: 150px;
+}
+
+.footer-nav a {
+  color: #1f2833;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+/********************** FOOTER END *********************/
