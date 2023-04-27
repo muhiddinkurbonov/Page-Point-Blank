@@ -11,7 +11,10 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
-
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 li {
   list-style: none;
 }
@@ -229,3 +232,74 @@ footer {
 }
 
 /*********************** END index.html ********************/
+
+/*********************** END products.html ********************/
+#product-show {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.product-images {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid gray;
+  margin: 2rem;
+}
+.main-product-image img {
+  width: min(100%, 35rem)
+}
+.other-product-images {
+  margin: 0.5rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+.other-product-images img {
+  width: 30%;
+}
+
+.product-stats {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+.product-stats .title {
+  border-bottom: 2px solid gray;
+}
+
+.select-model {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid gray;
+}
+
+#add-to-cart {
+  margin: 2rem 0;
+  padding: 0.7rem 2rem;
+  background-color: rgb(90, 88, 88);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.product-description p {
+  padding: 2rem 0;
+  border-bottom: 2px solid gray;
+}
+#woodsworth-and-black-fountain {
+  border: 1px solid gray;
+  padding: 3px 5px;
+}
+/*********************** END products.html ********************/
+
+
+
+
+@media only screen and (min-width: 600px) {
+  .product-images, .product-stats {
+    width: 42%;
+  }
+}
