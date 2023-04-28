@@ -444,8 +444,8 @@ img.star {
 }
 
 .cart-btns {
-    border-top: 2px solid #dfdddd;
-    padding: 1rem 0;
+  border-top: 2px solid #dfdddd;
+  padding: 1rem 0;
 }
 
 button.next {
@@ -501,6 +501,62 @@ figcaption {
   align-items: center;
 }
 
+/************************ END ABOUT *******************/
+
+/*********************** Add a product *********************/
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#add-product {
+  margin: 2rem 0.5rem;
+  width: 100%;
+}
+#add-product label,
+input,
+textarea {
+  display: block;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+#product-name,
+#product-description {
+  border: 1px solid #b4dfe5;
+  font-size: 1rem;
+  padding: 0.5rem 0.3rem;
+  color: #157e8b;
+}
+#product-name:focus,
+#product-description:focus {
+  color: #0c7aad;
+  outline: none;
+  box-shadow: 0 0 0.3rem #b4dfe5;
+}
+#product-description {
+  height: 10rem;
+}
+::placeholder {
+  color: rgb(190, 189, 189);
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+#add-product button {
+  padding: 0.6rem 2.5rem;
+  background-color: #27a243;
+  color: #fff;
+  float: right;
+  font-size: 1rem;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+#add-product button:hover {
+  background-color: #0c7224;
+}
+/***********************END Add a product *********************/
+
 @media only screen and (min-width: 600px) {
   .product-images,
   .product-stats {
@@ -517,9 +573,12 @@ figcaption {
   .cart-summary {
     width: 25%;
   }
-  
 
- .team-member {
+  .team-member {
     width: 30%;
+  }
+
+  #add-product {
+    width: 60%;
   }
 }
