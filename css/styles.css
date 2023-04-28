@@ -522,20 +522,21 @@ textarea {
   width: 100%;
 }
 #product-name,
-#product-description {
+#product-description, #product-image-url, #product-price {
   border: 1px solid #b4dfe5;
   font-size: 1rem;
   padding: 0.5rem 0.3rem;
   color: #157e8b;
 }
 #product-name:focus,
-#product-description:focus {
+#product-description:focus, #product-image-url:focus,
+#product-price:focus {
   color: #0c7aad;
   outline: none;
   box-shadow: 0 0 0.3rem #b4dfe5;
 }
 #product-description {
-  height: 10rem;
+  height: 5rem;
 }
 ::placeholder {
   color: rgb(190, 189, 189);
@@ -558,9 +559,6 @@ textarea {
 /***********************END Add a product *********************/
 
 /************************* ADMIN DASH **************************/
-.item-image {
-  width: 8rem;
-}
 
 
 
@@ -568,6 +566,47 @@ textarea {
 
 
 /*************************END ADMIN DASH **************************/
+
+/*********************** ITEMS *********************************/
+
+.add {
+  display: flex;
+  justify-content: flex-end;
+}
+#add-icon {
+  width: 2rem;
+  cursor: pointer;
+  margin-right: 5rem;
+}
+.products {
+  margin-top: 5rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  border: 1px solid rgb(204, 202, 202);
+}
+.product-card-body {
+  padding: 1rem;
+  width: 250px;
+}
+.product-card-name {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: rgb(22, 22, 22);
+}
+/**************************** END ITEMS ************************/
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 600px) {
   .product-images,
