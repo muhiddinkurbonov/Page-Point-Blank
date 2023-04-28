@@ -504,7 +504,7 @@ figcaption {
 /************************ END ABOUT *******************/
 
 /*********************** Add a product *********************/
-main {
+.add-item-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -556,6 +556,18 @@ textarea {
   background-color: #0c7224;
 }
 /***********************END Add a product *********************/
+
+/************************* ADMIN DASH **************************/
+.item-image {
+  width: 8rem;
+}
+
+
+
+
+
+
+/*************************END ADMIN DASH **************************/
 
 @media only screen and (min-width: 600px) {
   .product-images,
