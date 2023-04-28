@@ -466,6 +466,41 @@ button.cancel {
 
 /********************** CART *********************/
 
+/*********************** ABOUT *********************/
+header .short-description {
+  padding: 1rem;
+}
+.short-description h3 {
+  margin-top: 0.2rem;
+  text-align: center;
+}
+.meet-our-team {
+  text-align: center;
+  margin: 1rem 0 2rem 0;
+}
+.profile-image {
+  width: 10rem;
+  border-radius: 0.5rem;
+}
+figcaption {
+  margin: 0.5rem 0;
+  font-weight: 600;
+}
+.team {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.team-member figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media only screen and (min-width: 600px) {
   .product-images,
   .product-stats {
@@ -481,5 +516,10 @@ button.cancel {
   }
   .cart-summary {
     width: 25%;
+  }
+  
+
+ .team-member {
+    width: 30%;
   }
 }
