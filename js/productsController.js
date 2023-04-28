@@ -1,7 +1,7 @@
-class ProductsController {
+export default class ProductsController {
   constructor(currentId = 0) {
     this.currentId = currentId;
-    this.products = [];
+    this._products = JSON.parse(localStorage.getItem("products")) || [];
   }
 
   addItem(name, description, img) {
@@ -13,10 +13,12 @@ class ProductsController {
       img,
       createdAt,
     };
-    this.products.push(newProduct);
+    this._products.push(newProduct);
+    localStorage.setItem("products", JSON.stringify(this._products));
+    console.log(this._products);
+  }
+
+  getProducts() {
+    return this._products;
   }
 }
-
-// const product = new ProductsController();
-// product.addItem("pen", "great pen", "pen.jpg");
-// console.log(product.products);
