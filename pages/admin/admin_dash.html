@@ -28,7 +28,7 @@
   <br>
   <main>
     <div class="add">
-    <img src="../../images/svg/add.svg" alt="" id="add-icon" title="Add">
+      <button id="add-new" class="btn"><span class="plus-sign">+</span> Add new</button>
     </div>
     <div class="add-item-container" style="display: none;">
       <form id="add-product" method="post" enctype="multipart/form-data">
@@ -45,13 +45,15 @@
 
         <!-- <label for="choose-image">Select an image(jpg, jpeg, png)</label>     // stretch goal: to upload image from device
               <input type="file" id="choose-image" accept=".jpg, .jpeg, .png" required> -->
-        <button type="submit">Save</button>
+
+        <button type="submit" class="btn save">Save</button>
+        <button type="button" class="btn cancel" id="add-new-cancel">Close</button>
       </form>
-      
+
 
     </div>
     <div class="products">
-    
+
     </div>
   </main>
 
