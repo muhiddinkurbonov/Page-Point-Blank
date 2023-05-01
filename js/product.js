@@ -1,4 +1,6 @@
 import ProductsController from "./productsController.js";
+const productsController = new ProductsController();
+
 
 const productCard = (img, name, description, price) => `
 <div class="product-card">
@@ -27,8 +29,6 @@ const description = document.getElementById("product-description");
 const img = document.getElementById("product-image-url");
 const price = document.getElementById("product-price");
 const addForm = document.getElementById("add-product");
-
-const productsController = new ProductsController();
 
 addForm.addEventListener("submit", (e) => {
   e.preventDefault();
