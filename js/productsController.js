@@ -4,13 +4,14 @@ export default class ProductsController {
     this._products = JSON.parse(localStorage.getItem("products")) || [];
   }
 
-  addItem(name, description, img) {
+  addItem(name, description, img, price) {
     const createdAt = new Date().toLocaleString();
     const newProduct = {
       id: this.currentId++,
       name,
       description,
       img,
+      price,
       createdAt,
     };
     this._products.push(newProduct);
