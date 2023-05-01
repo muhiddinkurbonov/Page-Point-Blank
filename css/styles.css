@@ -23,6 +23,11 @@ li {
 a {
   text-decoration: none;
 }
+.btn {
+  padding: 0.5rem 2.5rem;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
 .nav-logo {
   display: flex;
   align-items: center;
@@ -543,41 +548,49 @@ textarea {
   font-size: 1rem;
   font-family: 'Roboto', sans-serif;
 }
-#add-product button {
-  padding: 0.6rem 2.5rem;
+.save, .cancel {
   background-color: #27a243;
   color: #fff;
-  float: right;
-  font-size: 1rem;
   transition: all 0.4s;
   cursor: pointer;
 }
 
-#add-product button:hover {
+.save:hover {
   background-color: #0c7224;
+}
+.cancel:hover {
+  background-color: rgb(119, 118, 118);
+  color: #fff;
 }
 /***********************END Add a product *********************/
 
 /************************* ADMIN DASH **************************/
 
+.add {
+  display: flex;
+  justify-content: flex-end;
+}
 
-
-
-
+#add-new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 1.2rem;
+  cursor: pointer;
+}
+.plus-sign {
+  font-size: 1.2rem;
+  margin-right: 0.4rem;
+}
 
 /*************************END ADMIN DASH **************************/
 
 /*********************** ITEMS *********************************/
 
-.add {
-  display: flex;
-  justify-content: flex-end;
-}
-#add-icon {
-  width: 2rem;
-  cursor: pointer;
-  margin-right: 5rem;
-}
+
+
 .products {
   margin-top: 5rem;
   padding: 2rem;
@@ -602,6 +615,7 @@ textarea {
   margin-top: 0.3rem;
   font-weight: 600;
 }
+
 /**************************** END ITEMS ************************/
 
 

@@ -20,6 +20,10 @@ function closeMenu() {
   navMenu.classList.remove("active");
 }
 
-document.getElementById('add-icon').addEventListener('click', () => {
+document.getElementById('add-new').addEventListener('click', () => {
   document.querySelector('.add-item-container').style.display=''
+})
+
+document.getElementById('add-new-cancel').addEventListener('click', () => {
+  document.querySelector('.add-item-container').style.display = 'none';
 })
