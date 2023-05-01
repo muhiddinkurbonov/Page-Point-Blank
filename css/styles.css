@@ -565,7 +565,11 @@ textarea {
 /***********************END Add a product *********************/
 
 /************************* ADMIN DASH **************************/
-
+#admin-dashboard {
+  text-align: center;
+  margin: 0.5rem 0 2rem 0;
+  color: rgb(104, 103, 103);
+}
 .add {
   display: flex;
   justify-content: flex-end;
